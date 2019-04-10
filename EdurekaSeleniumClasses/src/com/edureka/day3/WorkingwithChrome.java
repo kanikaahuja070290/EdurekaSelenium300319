@@ -1,5 +1,6 @@
 package com.edureka.day3;
 
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class WorkingwithChrome {
@@ -11,7 +12,9 @@ public class WorkingwithChrome {
 		System.setProperty("webdriver.chrome.driver", 
 				"C:\\Users\\A2M0014\\drivers\\chromedriver_win32\\chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.manage().window().maximize();
+		Dimension dim=new Dimension(500,500);
+		driver.manage().window().setSize(dim);
+		//driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.get("http://qatechhub.com");
 	}
