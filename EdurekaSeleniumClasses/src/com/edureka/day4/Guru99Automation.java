@@ -38,7 +38,7 @@ import org.openqa.selenium.support.ui.Select;
 			driver.findElement(By.name("city")).sendKeys("Gurgaon");
 			driver.findElement(By.name("state")).sendKeys("Haryana");
 			driver.findElement(By.name("pinno")).sendKeys("122016");
-			driver.findElement(By.name("telephoneno")).sendKeys("1634511190");
+			driver.findElement(By.name("telephoneno")).sendKeys("1634551190");
 			
 			String emailID="qwerty" + System.currentTimeMillis() + "@abc.com"; //unique email id
 			driver.findElement(By.name("emailid")).sendKeys(emailID);
