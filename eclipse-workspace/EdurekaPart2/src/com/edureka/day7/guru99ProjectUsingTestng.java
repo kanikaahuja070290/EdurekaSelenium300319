@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -48,6 +49,8 @@ public class guru99ProjectUsingTestng {
 	{
 		String titleOfThePage=driver.getTitle();
 		System.out.println("Title of the Page :"+titleOfThePage);
+		
+		Assert.assertEquals(titleOfThePage, "Guru99 Bank Home Page");
 	}
 	
 	@Parameters({"userid","userPassword"})
@@ -61,6 +64,9 @@ public class guru99ProjectUsingTestng {
 		driver.findElement(By.name("password")).sendKeys(userpwd);
 		driver.findElement(By.name("btnLogin")).click();
 		
+		String managerIdText = driver.findElement(By.xpath("//td[contains(text(),'Manger Id :')]")).getText();
+		String actualManagerId=managerIdText.split(":")[1].trim();
+		Assert.assertEquals(actualManagerId, userId);
 	}
 	
 	@AfterClass

@@ -1,40 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="8" total="11" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="PracSuite" duration-ms="63" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
+  <suite name="Default suite" duration-ms="47" started-at="2019-04-21T11:46:34Z" finished-at="2019-04-21T11:46:34Z">
     <groups>
-      <group name="Sanity">
-        <method signature="TestngAnnotations.testcase3()[pri:0, instance:com.edureka.day7.TestngAnnotations@8bd1b6a]" name="testcase3" class="com.edureka.day7.TestngAnnotations"/>
-        <method signature="TestngPrac1.testcase1()[pri:1000, instance:com.edureka.day7.TestngPrac1@55f3ddb1]" name="testcase1" class="com.edureka.day7.TestngPrac1"/>
-        <method signature="TestngPrac1.testcase3()[pri:3000, instance:com.edureka.day7.TestngPrac1@55f3ddb1]" name="testcase3" class="com.edureka.day7.TestngPrac1"/>
-      </group> <!-- Sanity -->
     </groups>
-    <test name="PracTest" duration-ms="63" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
-      <class name="com.edureka.day7.TestngAnnotations">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.edureka.day7.TestngAnnotations@8bd1b6a]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
+    <test name="Default test" duration-ms="47" started-at="2019-04-21T11:46:34Z" finished-at="2019-04-21T11:46:34Z">
+      <class name="com.edureka.day7.DataProviderExample2">
+        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String, int)[pri:0, instance:com.edureka.day7.DataProviderExample2@2a2d45ba]" name="printTestData" duration-ms="15" started-at="2019-04-21T11:46:34Z" data-provider="getData" finished-at="2019-04-21T11:46:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kanika]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1000]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="testcase3()[pri:0, instance:com.edureka.day7.TestngAnnotations@8bd1b6a]" name="testcase3" duration-ms="16" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
+        </test-method> <!-- printTestData -->
+        <test-method status="PASS" signature="printTestData(java.lang.String, java.lang.String, int)[pri:0, instance:com.edureka.day7.DataProviderExample2@2a2d45ba]" name="printTestData" duration-ms="0" started-at="2019-04-21T11:46:34Z" data-provider="getData" finished-at="2019-04-21T11:46:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ashish]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[def]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1001]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testcase3 -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.edureka.day7.TestngAnnotations@8bd1b6a]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- com.edureka.day7.TestngAnnotations -->
-      <class name="com.edureka.day7.TestngPrac1">
-        <test-method status="PASS" signature="testcase3()[pri:3000, instance:com.edureka.day7.TestngPrac1@55f3ddb1]" name="testcase3" duration-ms="0" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase3 -->
-        <test-method status="PASS" signature="testcase1()[pri:1000, instance:com.edureka.day7.TestngPrac1@55f3ddb1]" name="testcase1" duration-ms="0" started-at="2019-04-21T10:45:11Z" finished-at="2019-04-21T10:45:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase1 -->
-      </class> <!-- com.edureka.day7.TestngPrac1 -->
-    </test> <!-- PracTest -->
-  </suite> <!-- PracSuite -->
+        </test-method> <!-- printTestData -->
+      </class> <!-- com.edureka.day7.DataProviderExample2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
