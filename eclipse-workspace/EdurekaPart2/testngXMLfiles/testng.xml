@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PracSuite">
+  <test thread-count="5" name="PracTest">
+    <classes>
+      <class name="com.edureka.day7.TestngPrac"/>
+      <class name="com.edureka.day7.TestngPrac1"/>
+    </classes>
+  </test> <!-- PracTest -->
+</suite> <!-- PracSuite -->

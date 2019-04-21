@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Guru99 Test Suite" parallel="tests">
+  <test thread-count="5" name="Chrome Test">
+   <parameter name="browsertype" value="chrome"></parameter>
+  <parameter name="userid" value="mngr188825"> </parameter>
+  <parameter name="userPassword" value="ybUhErU"> </parameter>
+    <classes>
+      <class name="com.edureka.day7.guru99ProjectUsingTestng"/>
+    </classes>
+  </test> <!-- Chrome Test -->
+  
+  <test thread-count="5" name="Edge Test">
+   <parameter name="browsertype" value="edge"></parameter>
+  <parameter name="userid" value="mngr188825"> </parameter>
+  <parameter name="userPassword" value="ybUhErU"> </parameter>
+    <classes>
+      <class name="com.edureka.day7.guru99ProjectUsingTestng"/>
+    </classes>
+  </test>
+  
+  <test thread-count="5" name="Firefox Test">
+   <parameter name="browsertype" value="firefox"></parameter>
+  <parameter name="userid" value="mngr188825"> </parameter>
+  <parameter name="userPassword" value="ybUhErU"> </parameter>
+    <classes>
+      <class name="com.edureka.day7.guru99ProjectUsingTestng"/>
+    </classes>
+  </test> 
+</suite> <!-- Guru99 Test Suite -->
