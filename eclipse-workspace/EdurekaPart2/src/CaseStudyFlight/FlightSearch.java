@@ -1,7 +1,5 @@
 package CaseStudyFlight;
 
-import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -10,8 +8,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class FlightSearch {
 	WebDriver driver;
@@ -52,7 +50,7 @@ public class FlightSearch {
 	a.moveToElement(cal).click().build().perform();
 	}
 	
-	/*public void selectpassenger()
+	public void selectpassenger()
 	{
 	driver.findElement(By.name("passenger")).click();
 	Actions a1=new Actions(driver);
