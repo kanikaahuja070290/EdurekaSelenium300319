@@ -25,6 +25,9 @@ public class FlightSearch {
 	driver.manage().window().maximize();
 	driver.manage().deleteAllCookies();
 	driver.get("https://www.goindigo.in/?linkNav=home_header");
+	}
+	public void bookAFlight()
+	{
 	driver.findElement(By.xpath("//label[text()='One Way']")).click();
 	}
 	
@@ -58,15 +61,14 @@ public class FlightSearch {
 	a1.moveToElement(adult).click().build().perform();
 	a1.moveToElement(adult).click().build().perform();
     
-	Actions a2=new Actions(driver);
-	WebElement children=driver.findElement(By.xpath("//div[@class='passenger-dropdown pax-selection-row']/ul/li[2]/div/button[2]"));
-	a2.moveToElement(children).click().build().perform();
-	a2.moveToElement(children).click().build().perform();
 	
-	Actions a3=new Actions(driver);
-	WebElement donebutton=driver.findElement(By.xpath("//div[@class='modal-footer']/button[contains(text(),'Done')]"));
-	 waitTillElementVisible(10, By.xpath("//div[@class='modal-footer']/button[contains(text(),'Done')]"));
-	 a3.moveToElement(donebutton).build().perform();
+	WebElement children=driver.findElement(By.xpath("//div[@class='passenger-dropdown pax-selection-row']/ul/li[2]/div/button[2]"));
+	a1.moveToElement(children).click().build().perform();
+	a1.moveToElement(children).click().build().perform();
+	
+	WebElement donebutton=driver.findElement(By.xpath("(//div[@class='modal-footer']/button)[1]"));
+	waitTillElementClickable(60, By.xpath("(//div[@class='modal-footer']/button)[1]"));
+	 a1.moveToElement(donebutton).build().perform();
 	 donebutton.click();
 	//driver.findElement(By.xpath("//div[@class='modal-footer']/button[contains(text(),'Done')]")).click();
 	}
@@ -75,11 +77,21 @@ public class FlightSearch {
 
 
 
-	private void waitTillElementVisble(int timeOutInSeconds, By locator) {
+	private void waitTillElementVisble(int timeOutInSeconds, By locator) 
+	{
 
 		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
 
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+
+	}
+	
+	private void waitTillElementClickable(int timeOutInSeconds, By locator) 
+	{
+
+		WebDriverWait wait = new WebDriverWait(driver, timeOutInSeconds);
+
+		wait.until(ExpectedConditions.elementToBeClickable(locator));
 
 	}
 
@@ -89,7 +101,7 @@ public class FlightSearch {
 	driver.findElement(By.xpath("//button[@type='submit']/span[text()='Search Flight']")).click();
 	}
 	
-	public void getList()
+	/*public void getList()
 	{
 	driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
 	

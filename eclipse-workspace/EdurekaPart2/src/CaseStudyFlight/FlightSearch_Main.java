@@ -6,13 +6,14 @@ public class FlightSearch_Main {
 	
 			FlightSearch fs=new FlightSearch();
 			fs.invokeBrowser();
+			fs.bookAFlight();
 			fs.enterSource(); 
 			fs.enterSource();
 			fs.enterDestination();
 			fs.selectDate();
-			/*fs.selectpassenger();
+			fs.selectpassenger();
 			fs.submitForm();
-			fs.getList();*/
+			//fs.getList();*/
 			
 
 	}
